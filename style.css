@@ -26,24 +26,22 @@ body {
 .content {
     text-align: center;
 }
-/* Center and style the clean music block over your waves */
+/* Center and style the music player over your waves */
 .music-container {
-    width: 300px;
-    height: 80px;
-    background: rgba(0, 0, 0, 0.6); /* Translucent dark capsule */
-    padding: 10px;
-    border-radius: 50px; /* Smooth pill shape */
-    backdrop-filter: blur(10px); /* Premium blurry glass effect */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    max-width: 450px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 15px;
+    border-radius: 16px; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
     overflow: hidden;
 }
 
-/* Restyle the actual player iframe inside the capsule */
+/* Make the iframe adapt to the box */
 .music-container iframe {
     width: 100%;
-    height: 60px;
-    border-radius: 30px;
+    height: 100%;
+    border-radius: 8px;
 }
