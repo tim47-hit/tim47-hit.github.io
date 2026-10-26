@@ -58,3 +58,14 @@ body {
         letter-spacing: 2px;
     }
 }
+
+/* Blocage absolu de l'affichage du lecteur audio pour éliminer la bande noire sur Facebook */
+audio, #bg-music {
+    display: none !important;
+    visibility: hidden !important;
+    width: 0px !important;
+    height: 0px !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+}
