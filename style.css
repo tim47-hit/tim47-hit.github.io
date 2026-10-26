@@ -11,37 +11,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff;
     
-    /* Si l'image vagues.jpg n'est pas trouvée, un fond bleu se mettra par sécurité */
-    background: #3a7bd5;
-    
-    /* Chargement de l'image de fond */
+    /* Votre magnifique image de fond */
     background-image: url('vagues.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #3a7bd5; /* Bleu de sécurité */
 }
 
 .content {
-    text-align: center;
-}
-/* Center and style the music player over your waves */
-.music-container {
-    width: 100%;
-    max-width: 450px;
-    height: 250px;
-    background: rgba(0, 0, 0, 0.6); 
-    padding: 15px;
-    border-radius: 16px; 
-    backdrop-filter: blur(10px); 
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Make the iframe adapt to the box */
-.music-container iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
+/* Capsule moderne translucide pour la barre audio */
+.audio-player-box {
+    background: rgba(255, 255, 255, 0.12);
+    padding: 14px 22px;
+    border-radius: 50px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Redimensionnement de la barre audio pour mobile et bureau */
+audio {
+    width: 250px;
+    height: 40px;
+    outline: none;
 }
