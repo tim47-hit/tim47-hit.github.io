@@ -8,10 +8,21 @@
 </head>
 <body>
     <div class="content">
-        <!-- La barre audio native intégrée dans votre capsule -->
-        <div class="audio-player-box">
-            <audio controls src="music.mp3"></audio>
-        </div>
+        <!-- Le lecteur est maintenant masqué et configuré en autoplay -->
+        <audio id="bg-music" src="music.mp3" autoplay loop></audio>
     </div>
+
+    <!-- Ce petit script force la musique à démarrer dès que l'utilisateur touche l'écran, pour contourner le blocage Android/Brave -->
+    <script>
+        document.addEventListener('click', function() {
+            var audio = document.getElementById('bg-music');
+            audio.play();
+        }, { once: true });
+        
+        document.addEventListener('touchstart', function() {
+            var audio = document.getElementById('bg-music');
+            audio.play();
+        }, { once: true });
+    </script>
 </body>
 </html>
