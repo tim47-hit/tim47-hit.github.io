@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Couleur du texte : gris foncé pour rester lisible sur le fond blanc en bas */
+    color: #2c3e50; 
+    
+    /* Dégradé du bleu moderne (en haut) vers le blanc pur (en bas) */
+    background: linear-gradient(180deg, #3a7bd5 0%, #ffffff 100%);
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+}
