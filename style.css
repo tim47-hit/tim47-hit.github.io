@@ -27,26 +27,26 @@ body {
     align-items: center;
 }
 
-/* Style élégant pour le message en bas à droite */
+/* Style élégant repositionné en HAUT à droite */
 .elegant-script {
     position: absolute;
-    bottom: 30px;
+    top: 40px; /* Aligné en haut */
     right: 40px;
-    color: rgba(255, 255, 255, 0.75); /* Blanc légèrement translucide */
+    color: rgba(255, 255, 255, 0.75); /* Blanc translucide poétique */
     font-size: 1.1rem;
     font-weight: 300;
-    letter-spacing: 3px; /* Espacement poétique des lettres */
+    letter-spacing: 3px; /* Espacement fin des lettres */
     font-style: italic;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Ombre douce pour la lisibilité sur l'eau */
-    transition: opacity 1s ease; /* Effet de fondu lors de la disparition */
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Lisibilité sur l'écume */
+    transition: opacity 1s ease; /* Effet de fondu magique */
     user-select: none;
-    pointer-events: none; /* Évite de bloquer les clics sur l'écran */
+    pointer-events: none;
 }
 
-/* Ajustement discret pour les écrans de téléphones portables */
+/* Ajustement pour les téléphones portables */
 @media (max-width: 768px) {
     .elegant-script {
-        bottom: 25px;
+        top: 30px;
         right: 25px;
         font-size: 0.95rem;
         letter-spacing: 2px;
