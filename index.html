@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +8,29 @@
 </head>
 <body>
     <div class="content">
-        <!-- Le lecteur est maintenant masqué et configuré en autoplay -->
         <audio id="bg-music" src="music.mp3" autoplay loop></audio>
     </div>
 
-    <!-- Ce petit script force la musique à démarrer dès que l'utilisateur touche l'écran, pour contourner le blocage Android/Brave -->
+    <!-- Message discret et élégant en bas à droite -->
+    <div id="interaction-message" class="elegant-script">
+        touch the screen and dive
+    </div>
+
     <script>
-        document.addEventListener('click', function() {
+        function startMusic() {
             var audio = document.getElementById('bg-music');
             audio.play();
-        }, { once: true });
-        
-        document.addEventListener('touchstart', function() {
-            var audio = document.getElementById('bg-music');
-            audio.play();
-        }, { once: true });
+            // Fait disparaître le message en douceur une fois que l'utilisateur a cliqué
+            var message = document.getElementById('interaction-message');
+            message.style.opacity = '0';
+            setTimeout(function() {
+                message.style.display = 'none';
+            }, 1000);
+        }
+
+        document.addEventListener('click', startMusic, { once: true });
+        document.addEventListener('touchstart', startMusic, { once: true });
     </script>
 </body>
 </html>
+
