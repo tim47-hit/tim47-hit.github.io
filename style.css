@@ -27,22 +27,22 @@ body {
     align-items: center;
 }
 
-/* Style élégant en HAUT à droite avec couleur BLEU visible */
+/* Style élégant en HAUT à droite avec couleur VIOLET FONCÉ */
 .elegant-script {
     position: absolute;
     top: 40px;
     right: 40px;
     
-    /* Changement de couleur : Un bleu azur lumineux très visible sur l'eau */
-    color: #00d2ff; 
+    /* Couleur violet foncé profond et magnétique */
+    color: #4a148c; 
     
-    font-size: 1.1rem;
-    font-weight: 400; /* Légèrement épaissi pour améliorer la lecture */
+    font-size: 1.15rem; /* Un tout petit peu plus grand pour compenser la couleur sombre */
+    font-weight: 500; /* Lettres légèrement plus denses pour une visibilité maximale */
     letter-spacing: 3px;
     font-style: italic;
     
-    /* Ombre noire renforcée derrière les lettres bleues pour détacher le texte des vagues */
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6); 
+    /* Contour/Ombre douce blanche et noire pour que le violet ressorte parfaitement sur l'eau sombre */
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.6), 0 2px 4px rgba(0, 0, 0, 0.3); 
     
     transition: opacity 1s ease;
     user-select: none;
@@ -54,7 +54,7 @@ body {
     .elegant-script {
         top: 30px;
         right: 25px;
-        font-size: 0.95rem;
+        font-size: 1rem;
         letter-spacing: 2px;
     }
 }
