@@ -25,24 +25,3 @@ body {
     justify-content: center;
     align-items: center;
 }
-
-/* Capsule moderne translucide pour la barre audio */
-.audio-player-box {
-    background: rgba(255, 255, 255, 0.12);
-    padding: 14px 22px;
-    border-radius: 50px;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Redimensionnement de la barre audio pour mobile et bureau */
-audio {
-    width: 250px;
-    height: 40px;
-    outline: none;
-}
