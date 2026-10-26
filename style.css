@@ -11,11 +11,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #ffffff; /* Texte en blanc pour être lisible sur l'eau */
+    color: #ffffff;
     
-    /* Intégration de l'image en fond d'écran */
+    /* Si l'image vagues.jpg n'est pas trouvée, un fond bleu se mettra par sécurité */
+    background: #3a7bd5;
+    
+    /* Chargement de l'image de fond */
     background-image: url('vagues.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.content {
+    text-align: center;
 }
