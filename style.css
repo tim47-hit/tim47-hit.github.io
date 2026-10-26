@@ -14,7 +14,7 @@ body {
     color: #ffffff; /* Texte en blanc pour être lisible sur l'eau */
     
     /* Intégration de l'image en fond d'écran */
-    background-image: url('vagues.png');
+    background-image: url('vagues.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
