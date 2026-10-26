@@ -27,23 +27,29 @@ body {
     align-items: center;
 }
 
-/* Style élégant repositionné en HAUT à droite */
+/* Style élégant en HAUT à droite avec couleur BLEU visible */
 .elegant-script {
     position: absolute;
-    top: 40px; /* Aligné en haut */
+    top: 40px;
     right: 40px;
-    color: rgba(255, 255, 255, 0.75); /* Blanc translucide poétique */
+    
+    /* Changement de couleur : Un bleu azur lumineux très visible sur l'eau */
+    color: #00d2ff; 
+    
     font-size: 1.1rem;
-    font-weight: 300;
-    letter-spacing: 3px; /* Espacement fin des lettres */
+    font-weight: 400; /* Légèrement épaissi pour améliorer la lecture */
+    letter-spacing: 3px;
     font-style: italic;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Lisibilité sur l'écume */
-    transition: opacity 1s ease; /* Effet de fondu magique */
+    
+    /* Ombre noire renforcée derrière les lettres bleues pour détacher le texte des vagues */
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6); 
+    
+    transition: opacity 1s ease;
     user-select: none;
     pointer-events: none;
 }
 
-/* Ajustement pour les téléphones portables */
+/* Ajustement pour les écrans de téléphones portables */
 @media (max-width: 768px) {
     .elegant-script {
         top: 30px;
